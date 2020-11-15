@@ -1,8 +1,7 @@
 {
-  "book": "The Passionate Programmer",
-  "autors": {
-    "author1": "Chad Fowler",
-    "author2": "David Heinemeier Hansson"
+  "bookInfo": {
+    "book": "The Passionate Programmer",
+    "autors": ["Chd Fowler", "David Heinemeier Hansson"]
   },
   "quotes": [
     {
