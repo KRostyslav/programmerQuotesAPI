@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "build": ""
+    "build": "npm i && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -21,5 +21,5 @@
     "quotes"
   ],
   "author": "KRostyslav",
-  "license": "ISC"
+  "license": "MIT"
 }
