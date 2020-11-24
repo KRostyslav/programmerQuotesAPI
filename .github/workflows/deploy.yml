@@ -1,4 +1,4 @@
-name: FDeploy to Firebase Hosting
+name: Deploy to Firebase Hosting
 
 on:
   push:
@@ -11,13 +11,17 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.3.2
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+
+      - name: Setup node
+        uses: actions/setup-node@v1
         with:
-          args: deploy --only hosting
+          node-version: 12
+
+      - name: Install Dependencies
+        working-directory: functions
+        run: npm install
+
+      - name: Deploy to Firebase
+        run: npx firebase-tools deploy --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
