@@ -18,7 +18,13 @@ A simple API to retrive quotes from **The Passionate Programmer** book.
 > https://us-central1-books-quotes-api.cloudfunctions.net/getInfo
 
 ```
-{"book":"The Passionate Programmer","autors":["Chd Fowler","David Heinemeier Hansson"]}
+{
+    "book":"The Passionate Programmer",
+    "autors":[
+        "Chd Fowler",
+        "David Heinemeier Hansson"
+    ]
+}
 ```
 
 **/getRandomQuote** - get random quote from quotes list
@@ -28,7 +34,10 @@ A simple API to retrive quotes from **The Passionate Programmer** book.
 > https://us-central1-books-quotes-api.cloudfunctions.net/getRandomQuote
 
 ```
-{"tip":"16","quote":"Know/learn Software Development Methodologies"}
+{
+    "tip":"16",
+    "quote":"Know/learn Software Development Methodologies"
+}
 ```
 
 **/getAllQuotes** - get all quotes from book
@@ -38,7 +47,17 @@ A simple API to retrive quotes from **The Passionate Programmer** book.
 > https://us-central1-books-quotes-api.cloudfunctions.net/getAllQuotes
 
 ```
-[{"tip":"1","quote":"Keep on radar bleeding edge technologies vs sunset technologies"}, ..., {"tip":"53","quote":"Try to go independent (e.g. 2 hours/day after work hours) – how much did you earn?"}]
+[
+    {
+        "tip":"1",
+        "quote":"Keep on radar bleeding edge technologies vs sunset technologies"
+    },
+    ..., 
+    {
+        "tip":"53",
+        "quote":"Try to go independent (e.g. 2 hours/day after work hours) – how much did you earn?"
+    }
+]
 ```
 
 ----
