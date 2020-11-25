@@ -1,5 +1,8 @@
 # programmerQuotesAPI
 
+Endpoint getInfo
+
+Endpoint getRandonQuote
 
 https://us-central1-books-quotes-api.cloudfunctions.net/getRandomQuote
 
